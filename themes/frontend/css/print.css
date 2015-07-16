@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2014, 3:22:45 PM
+    Author     : Pero
+*/
+
+    
+@media print {
+     #printReceipt .logo {
+        width:120px;
+        max-width:200px;
+    }
+    #printReceipt button {
+        position:absolute;
+        right:15px;
+        top:10px;
+    }
+    #printReceipt .printHeader {
+        float:left;
+        padding-left:10px;
+    }
+}

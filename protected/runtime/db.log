@@ -1,0 +1,2296 @@
+2014/10/30 14:08:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:08:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:08:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:08:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:09:01 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:09:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:09:22 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:09:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:09:42 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:09:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:10:03 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:10:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:10:23 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:10:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:10:45 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:10:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:10:54 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:10:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:11:00 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:11:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:11:04 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:11:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:11:15 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:11:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:11:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:11:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:11:23 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:11:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:11:25 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 14:11:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 14:11:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/users
+---
+2014/10/30 14:11:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/users
+---
+2014/10/30 15:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/site/SessionOut
+---
+2014/10/30 15:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/site/SessionOut
+---
+2014/10/30 15:57:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/10/30 15:57:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/images/profile.png".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/images/pr...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 15:57:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/30 15:57:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/30 15:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/users
+---
+2014/10/30 16:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/shops
+---
+2014/10/30 16:13:55 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND paid=0' at line 3. The SQL statement executed was: SELECT sum(amount) as mySum
+FROM `payouts`
+WHERE user_id =  AND paid=0.
+2014/10/30 16:13:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND paid=0' at line 3' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/models/dao/PayoutsDao.php(96): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/protected/modules/admin/views/default/payouts.php(152): PayoutsDao->getGroupSumPayouts(NULL)
+#3 /ws/prod/qlirr/code/framework/web/CBaseController.php(126): require('/ws/prod/qlirr/...')
+#4 /ws/prod/qlirr/code/framework/web/CBaseController.php(95): CBaseController->renderInternal('/ws/prod/qlirr/...', NULL, true)
+#5 /ws/prod/qlirr/code/framework/web/CController.php(869): CBaseController->renderFile('/ws/prod/qlirr/...', NULL, true)
+#6 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(263): CController->renderPartial('payouts')
+#7 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actionpayouts()
+#8 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#15 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('payouts')
+#17 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/p...')
+#18 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/default/payouts
+HTTP_REFERER=http://qlirr.com/admin/default/shops
+---
+2014/10/30 16:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/admin/default/payouts
+---
+2014/10/30 16:13:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/admin/default/payouts
+---
+2014/10/30 16:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/shops
+---
+2014/10/30 20:07:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/site/SessionOut
+---
+2014/10/30 20:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/10/30 20:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/10/31 05:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/10/31 06:32:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/10/31 13:45:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/10/31 13:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/images/profile.png".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/images/pr...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/31 13:45:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/31 13:45:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/31 13:45:21 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/10/31 13:45:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/10/31 13:45:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/users
+---
+2014/10/31 13:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/shops
+---
+2014/10/31 14:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/site/SessionOut
+---
+2014/10/31 14:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/site/SessionOut
+---
+2014/10/31 14:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/site/SessionOut
+---
+2014/10/31 14:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/site/SessionOut
+---
+2014/10/31 14:35:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/10/31 15:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/
+---
+2014/10/31 15:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/site/
+---
+2014/10/31 15:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/site/
+---
+2014/10/31 15:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/ico/favicon.ico".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/ico/favi...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/ico/favicon.ico
+---
+2014/11/01 01:29:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/01 07:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/
+---
+2014/11/01 08:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/01 22:53:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/02 00:57:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wp-admin/admin-ajax.php".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('wp-admin/admin-...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wp-admin/admin-ajax.php?action=revslider_show_image&img=../wp-config.php
+---
+2014/11/02 03:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/02 05:11:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/02 14:49:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/03 04:52:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/03 18:42:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://www.qlirr.com/robots.txt
+---
+2014/11/04 02:37:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/04 10:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/
+---
+2014/11/04 10:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/04 10:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/04 10:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/userlogin
+---
+2014/11/04 10:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/userlogin
+---
+2014/11/04 10:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/userlogin
+---
+2014/11/04 10:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/
+---
+2014/11/04 10:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/04 10:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/04 11:13:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/
+---
+2014/11/04 11:13:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/04 11:13:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/04 14:20:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/05 03:34:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/05 04:21:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/05 14:14:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/11/05 14:14:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/images/profile.png".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/images/pr...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/05 14:14:25 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/05 14:14:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/05 14:14:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/settings
+---
+2014/11/05 15:44:06 [error] [exception.CException] exception 'CException' with message 'OrdersController cannot find the requested view "index".' in /ws/prod/qlirr/code/framework/web/CController.php:878
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /ws/prod/qlirr/code/protected/modules/user/controllers/OrdersController.php(7): CController->render('index')
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): OrdersController->actionIndex()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('')
+#7 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('user/orders')
+#8 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/user/orders
+HTTP_REFERER=http://qlirr.com/user/login
+---
+2014/11/05 15:44:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/orders
+---
+2014/11/05 15:44:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/orders
+---
+2014/11/05 15:53:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/user/orders/
+---
+2014/11/05 15:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/user/orders/
+---
+2014/11/05 15:53:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:53:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/user/orders
+---
+2014/11/05 15:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 15:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.woff".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.woff
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/frontend/css/font_icons8.ttf".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/css/font_icons8.ttf
+HTTP_REFERER=http://qlirr.com/themes/frontend/css/style.css
+---
+2014/11/05 16:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/
+---
+2014/11/05 16:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/05 16:04:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/05 16:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/money/send".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('user/money/send')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/money/send
+---
+2014/11/05 16:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:43:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/money/send".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('user/money/send')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/money/send
+---
+2014/11/05 16:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:43:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/money/send".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('user/money/send')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/money/send
+---
+2014/11/05 16:43:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:43:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:44:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/money/send".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('user/money/send')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/money/send
+---
+2014/11/05 16:44:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:44:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/money/send".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('user/money/send')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/money/send
+---
+2014/11/05 16:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 16:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/money/send
+---
+2014/11/05 19:08:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/06 04:22:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/06 13:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/06 20:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/11/06 20:59:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/images/profile.png".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/images/pr...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 21:00:00 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 21:00:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 21:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/users
+---
+2014/11/06 22:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/ico/favicon.ico".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/ico/favi...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/ico/favicon.ico
+HTTP_REFERER=http://qlirr.com/user/login/change_password
+---
+2014/11/06 22:43:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/11/06 22:43:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/images/profile.png".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/images/pr...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 22:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/settings
+---
+2014/11/06 22:43:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/settings
+---
+2014/11/06 22:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/users
+---
+2014/11/06 22:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/shops
+---
+2014/11/06 23:36:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/11/06 23:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/images/profile.png".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/images/pr...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:22 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:24 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:25 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:27 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:30 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:32 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:33 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:35 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:37 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:40 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:42 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:44 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:46 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:48 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:50 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:54 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:56 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:58 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/06 23:36:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/06 23:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/shops
+---
+2014/11/06 23:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/users
+---
+2014/11/06 23:37:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/settings
+---
+2014/11/07 08:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/07 08:55:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap.js')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap.js
+HTTP_REFERER=http://qlirr.com/site/login
+---
+2014/11/07 08:55:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/images/profile.png".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/images/pr...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/07 08:56:01 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/07 08:56:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/07 08:56:02 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'. The SQL statement executed was: SELECT sum(total_amount) as totalAmount
+FROM `orders`
+WHERE orderStatus_id = 2 AND tracking_number IS NULL and DATE_ADD(date_accepted, INTERVAL 5 DAY)<=CURDATE().
+2014/11/07 08:56:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tracking_number' in 'where clause'' in /ws/prod/qlirr/code/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/db/CDbCommand.php(414): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /ws/prod/qlirr/code/protected/modules/admin/controllers/DefaultController.php(193): CDbCommand->queryRow()
+#2 /ws/prod/qlirr/code/framework/web/actions/CInlineAction.php(49): DefaultController->actiongetData()
+#3 /ws/prod/qlirr/code/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /ws/prod/qlirr/code/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /ws/prod/qlirr/code/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /ws/prod/qlirr/code/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /ws/prod/qlirr/code/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /ws/prod/qlirr/code/framework/web/CController.php(291): CFilterChain->run()
+#10 /ws/prod/qlirr/code/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('getData')
+#12 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/g...')
+#13 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/default/getData
+HTTP_REFERER=http://qlirr.com/admin/default
+---
+2014/11/07 08:56:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /ws/prod/qlirr/code/framework/web/CController.php:483
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CController.php(270): CController->missingAction('images')
+#1 /ws/prod/qlirr/code/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/default/i...')
+#3 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/default/images/profile.png
+HTTP_REFERER=http://qlirr.com/admin/default/settings
+---
+2014/11/07 08:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pages/view".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('pages/view')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/
+---
+2014/11/07 08:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/bootstrap.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/bootstrap.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/07 08:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/admin/cms/css/style_frontend.css".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/admin/cm...')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/admin/cms/css/style_frontend.css
+HTTP_REFERER=http://qlirr.com/user/
+---
+2014/11/07 20:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/08 15:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/09 16:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2014/11/10 08:17:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /ws/prod/qlirr/code/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /ws/prod/qlirr/code/framework/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /ws/prod/qlirr/code/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /ws/prod/qlirr/code/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---

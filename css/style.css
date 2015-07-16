@@ -1,0 +1,28 @@
+body, td {
+  
+}
+
+a {
+}
+
+a:hover {
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+.leftContent {
+    width: 500px;
+    float: left;
+}
+
+.rightContent {
+    width: 460px;
+    float: left;
+}
+
+.clearer {
+    clear: both;
+}
